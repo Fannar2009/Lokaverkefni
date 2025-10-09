@@ -1,0 +1,237 @@
+
+body {
+    margin: 0;
+    font-family: 'Rokkitt', serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(43, 43, 43));    
+    color: wheat;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    color: wheat;
+} 
+header {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+header h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 -2px 8px rgb(192, 190, 190);
+    color: rgb(0, 0, 0);
+    margin: 0 0 -4rem 0;
+    z-index: 1;
+}
+.topnav{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.topnav a:link{
+    padding: .5rem 1rem;
+    border-bottom: solid 1px wheat;
+    
+}
+a:hover, a:active{
+    background-color: rgb(50, 50, 50);
+    text-decoration:underline;
+    color:burlywood;
+}
+@media screen and (min-width: 37.5rem){
+    .topnav {
+        flex-flow: row;
+        justify-content: center;
+    }
+    .topnav a:link{
+        border: 0;
+    }
+    header h1{
+        margin: 0 0 -10rem 0;
+    }
+}
+a {
+    text-decoration: none;
+    color: wheat;
+    
+}
+
+.img-bg{
+    background-image: linear-gradient(to top, rgb(68, 68, 68), rgb(124, 124, 124));    
+}
+.base-bg {
+    background-image: linear-gradient(to bottom, rgb(124, 124, 124), rgb(68, 68, 68));    
+    color: rgb(243, 224, 190);
+    padding: 1rem;
+}
+figcaption{
+    text-align: center;
+}
+.col-2,
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/****** standard IMG *********/
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+figure {
+    margin:0;
+
+}
+figcaption{
+    font-style: italic;
+}
+figure img, picture img{
+    display: block;
+}
+footer {
+    color: wheat;
+    padding: 1rem;
+}
+footer ul{
+    list-style: none;
+}
+a, footer a {
+    color: rgb(252, 238, 221);
+}
+footer a {
+    line-height: 1.5;
+}
+footer a:visited {
+    color: aliceblue;
+}
+footer a:active, .footer a:hover {
+    text-decoration: none;
+}
+.meðlimar{
+    background-color: rgba(0,0,0, 0.2  );
+    padding: 1rem;
+}
+blockquote {
+    background-color: rgba(0,0,0, 0.5);
+    padding:1rem;
+}
+.copy {
+    text-align: center;
+}
+/* ******** 48em ********* */
+@media screen and (min-width:48rem) {
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .col-3 {
+        grid-template-columns: 1fr 1fr ;
+ 
+    }
+    header h1 {
+        font-size: 4rem;
+        margin: 0 0 -15rem 0;
+    }
+}
+@media screen and (min-width:60rem) {
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .col-21 {
+        grid-template-columns: 2fr 1fr;
+        gap:2rem
+    }
+
+}
+@media screen and (min-width:80rem) {
+    body {
+        font-size: 1.4rem;
+    }
+    .container {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+    header h1 {
+        font-size: 6rem;
+    }
+}
+@media screen and (min-width:100em) {
+    .container {
+        max-width: 90rem;
+    }
+}
+/* Rétt hlutfall youtube > iframe  (.gluggi) 
+
+   óskuð breidd deilt í upphaflega breidd = n% 
+
+   til að finna rétta hæð : n%  * upphafleg hæð 
+*/
+
+/* 20em = 320px*/
+.gluggi {
+    width:100%;
+    height:10.5rem; /*168px;*/ 
+    margin: auto;
+  }
+
+@media screen and (min-width: 25rem) {
+    .gluggi {
+      height:13rem; /*207px;*/ 
+    }
+ }
+
+@media screen and (min-width: 30rem) {
+    .gluggi { 
+     height:15.75rem; /*252px;*/ 
+   }
+ }
+
+@media screen and (min-width: 37.5rem) {
+    .gluggi {
+      height:19.7rem; /*315px;*/
+    }
+ }
+
+ @media screen and (min-width:48rem){
+  .gluggi {
+    height:24.6rem; /*414px;*/ 
+  }
+}
+@media screen and (min-width:60rem){
+  .gluggi {
+    height:33rem; /*534px;*/ 
+  }
+}
+@media screen and (min-width: 80rem) {
+    .gluggi {  
+      height:44em; /*~702px;*/ 
+    }
+  } 
+
+
+/* google kort */
+
+@media screen and (min-width: 20rem) {
+    .kort {
+     width:100%;    
+     height:15.75rem; /*252px;*/ 
+   }
+ }
+
+@media screen and (min-width: 37.5rem) {
+    .kort {
+      height:19.7rem; /*315px; */
+    }
+ }
+
+ @media screen and (min-width:48rem){
+  .kort {
+    height:28.2rem; /*451,2px;*/ 
+  }
+}
